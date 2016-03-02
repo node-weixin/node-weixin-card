@@ -8,6 +8,7 @@ var app = {
 };
 var card = require('./create_card.json');
 var test_card_id = '';
+
 describe('node-weixin-card', function () {
 
   it('should have types', function (done) {
