@@ -16,6 +16,14 @@ describe('node-weixin-card', function () {
     done();
   });
 
+  it('should upload a logo image file', function (done) {
+    nodeWeixinCard.card.uploadLogo(app, 'test/image.jpg', function (err, resp) {
+      assert.equal(true, !err);
+      assert.equal(true, resp.url !== '');
+      done();
+    });
+  });
+
   it('should create a card', function (done) {
     nodeWeixinCard.card.create(app, card, function (err, resp) {
       assert.equal(true, resp.errcode === 0);
@@ -47,6 +55,14 @@ describe('node-weixin-card', function () {
     };
     nodeWeixinCard.card.update(app, update_card, function (err, resp) {
       console.log(resp);
+      assert.equal(true, resp.errcode === 0);
+      assert.equal(true, resp.errmsg === 'ok');
+      done();
+    });
+  });
+
+  it('should increase +10 stocks', function (done) {
+    nodeWeixinCard.card.stock(app, test_card_id, 10, function (err, resp) {
       assert.equal(true, resp.errcode === 0);
       assert.equal(true, resp.errmsg === 'ok');
       done();
