@@ -1,0 +1,24 @@
+{
+  "card_type": "GROUPON",
+  "groupon": {
+    "base_info": {
+      "logo_url": "http://mmbiz.qpic.cn/mmbiz/aYWDTHbouMjvCXPQl3bZ30vYBicQulT5n4SfdpCicEQ15ficjQNBlawPwLjaEOBkj3LibeQab5AZVnBbyGOic1AsEMw/0",
+      "code_type": "CODE_TYPE_BARCODE",
+      "brand_name": "node-weixin",
+      "title": "GROUPON券",
+      "sub_title": "副标题",
+      "color": "Color010",
+      "notice": "GROUPON券",
+      "description": "描述",
+      "date_info": {
+        "type": "DATE_TYPE_FIX_TERM",
+        "begin_timestamp": 1450000000,
+        "end_timestamp": 1456000000,
+        "fixed_term": 15,
+        "fixed_begin_term": 0
+      },
+      "sku": {"quantity": 100}
+    },
+    "deal_detail": "detail"
+  }
+}
